@@ -1,0 +1,63 @@
+# Messages sent by the plugin
+# If your server is running 1.16.x or above you can use hex colors with '&#<hexvalue>'
+messages:
+  core:
+    prefix: "&c&lC&6&lh&e&la&a&lt &b&lG&d&la&c&lm&6&le &8»&7"
+    # Note: the prefix is not automatically appended to the two messages below
+    toggled-off: "&7You will no longer see chat games."
+    toggled-on: "&7You will now see chat games!"
+  game-start:
+    # --------------
+    # Placeholders:
+    # --------------
+    # %GAME_CONTENT%: the word(s)/random string/equation/etc. of the game
+    unscramble: "The first person to &bunscramble &8'&f%GAME_CONTENT%&8' &7&7wins!"
+    type: "The first person to &atype &8'&f%GAME_CONTENT%&8' &7wins!"
+    solve: "The first person to &9solve &8'&f%GAME_CONTENT%&8' &7wins!"
+    type-random: "The first person to &atype &8'&f%GAME_CONTENT%&8' &7wins!"
+    trivia: "&f%GAME_CONTENT% &7(the first person to answer correctly wins!)"
+    fill-in: "The first to &6fill in &8'&f%GAME_CONTENT%&8' &7wins! (only type the missing letters)"
+    word-unshuffle: "The first to &cunshuffle&7 &8'&f%GAME_CONTENT%&8' &7back to the right order wins!"
+    reverse-word-unshuffle: "The first to &cunshuffle &7& &dunreverse &8'&f%GAME_CONTENT%&8' &7back to the right order wins!"
+    unreverse: "The first to &dunreverse &8'&f%GAME_CONTENT%&8' &7back to the right order wins!"
+  game-end:
+    # --------------
+    # Placeholders:
+    # --------------
+    # %PLAYER%: the username of the winner of the game
+    # %PLAYER_DISPLAYNAME%: the display name of the winner of the game
+    # %TIME%: the amount of it took to win
+    # %ANSWER%: the answer to the game
+    # %GAME_CONTENT%: the word/random string/equation/etc. of the game
+    # (fill-in only) %UNBLANKED_WORDS%: the unblanked out game-library entry
+    winner:
+      unscramble: "&d%PLAYER_DISPLAYNAME% &7unscrambled &8'&b%ANSWER%&8' &7in &d%TIME% &7seconds and got rewards!"
+      type: "&d%PLAYER_DISPLAYNAME% &7typed &8'&b%ANSWER%&8' &7in &d%TIME% &7seconds and got rewards!"
+      solve: "&d%PLAYER_DISPLAYNAME% &7solved &b%GAME_CONTENT% &8(&b%ANSWER%&8) &7in &d%TIME% &7seconds and got rewards!"
+      type-random: "&d%PLAYER_DISPLAYNAME% &7typed &8'&b%ANSWER%&8' &7in &d%TIME% &7seconds and got rewards!"
+      trivia: "&d%PLAYER_DISPLAYNAME% &7answered &8'&b%ANSWER%&8' &7in &d%TIME% &7seconds and got rewards!"
+      fill-in: "&d%PLAYER_DISPLAYNAME% &7filled in &8'&b%ANSWER%&8' &7to complete &8'&b%UNBLANKED_WORDS%&8' &7in &d%TIME% &7seconds and got rewards!"
+      word-unshuffle: "&d%PLAYER_DISPLAYNAME% &7put &8'&b%ANSWER%&8' &7back in the right order in &d%TIME% &7seconds and got rewards!"
+      reverse-word-unshuffle: "&d%PLAYER_DISPLAYNAME% &7unshuffled & unreversed &8'&b%ANSWER%&8' &7in &d%TIME% &7seconds and got rewards!"
+      unreverse: "&d%PLAYER_DISPLAYNAME% &7unreversed &8'&b%ANSWER%&8' &7in &d%TIME% &7seconds and got rewards!"
+    nobody-won:
+      # --------------
+      # Placeholders:
+      # --------------
+      # %TIME%: the amount of it took for the game to expire
+      # %ANSWER%: the answer to the game
+      # %GAME_CONTENT%: the word(s)/random string/equation/etc. of the game
+      # (fill-in only) %UNBLANKED_WORDS%: the unblanked out game-library entry
+      # Most games can use the generic reply and making sense, so you can use "{GENERIC}" to set any entries to mirror the text in generic:
+      generic: "&7Nobody got it in time; the answer was &8'&b%ANSWER%&8'&7!"
+      unscramble: "{GENERIC}"
+      type: "&7Nobody got it in time; better luck next time!"
+      solve: "{GENERIC}"
+      type-random: "&7Nobody got it in time; better luck next time!"
+      trivia: "{GENERIC}"
+      fill-in: "&7Nobody got it in time; the answer was &8'&b%ANSWER%&8'&7! (to complete &8'&b%UNBLANKED_WORDS%&8'&7)"
+      word-unshuffle: "{GENERIC}"
+      reverse-word-unshuffle: "{GENERIC}"
+      unreverse: "{GENERIC}"
+  misc:
+    incorrect-case: "&cSo close! You have to match the capitalization!"
